@@ -10,7 +10,6 @@ import csv
 app = Flask(__name__)
 CORS(app)
 
-# --- MySQL connection helper ---
 db = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -19,18 +18,16 @@ db = mysql.connector.connect(
 )
 
 def get_conn():
-    """Return a live MySQL connection, reconnecting if needed."""
     global db
     if not db.is_connected():            # check connection status [web:148][web:150]
         db.reconnect(attempts=3, delay=2)  # try to reconnect [web:145]
     return db
 
-# --- File upload config ---
+
 UPLOAD_FOLDER = './uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-# --- Helper: sentiment analysis ---
 def analyze_sentiment(text):
     blob = TextBlob(text)
     polarity = blob.sentiment.polarity
