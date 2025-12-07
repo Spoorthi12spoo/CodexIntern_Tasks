@@ -50,7 +50,7 @@ After running the program:
 
 - You will be asked to enter matrix values
 - A menu will appear to choose an operation
-- After selecting an operation, the result will be displayed clearly on the screen
+- After selecting an operation, the result will be displayed clearly on the screen.
 
 
 
