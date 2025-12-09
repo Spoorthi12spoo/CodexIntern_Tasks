@@ -7,7 +7,7 @@ An interactive interface displays the results in a clear and structured format.
 ## Features
 
 -Accepts user input to create matrices  
-Performs the following matrix operations:
+-Performs the following matrix operations:
 - Matrix Addition
 - Matrix Subtraction
 - Matrix Multiplication
