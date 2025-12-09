@@ -6,16 +6,16 @@ An interactive interface displays the results in a clear and structured format.
 
 ## Features
 
-✔ Accepts user input to create matrices  
-✔ Performs the following matrix operations:
+Accepts user input to create matrices  
+Performs the following matrix operations:
 - Matrix Addition
 - Matrix Subtraction
 - Matrix Multiplication
 - Matrix Transpose
 - Determinant Calculation
 
-✔ Displays results in a user-friendly format  
-✔ Built using Python and NumPy
+Displays results in a user-friendly format  
+Built using Python and NumPy
 
 
 ## Tech Stack
